@@ -5,7 +5,7 @@ while True:
     choice = input("1. Add \n2. Remove \n3. View all \n4. Edit\n5. Quit\n")
 
     if choice != "1" and choice != "2" and choice != "3" and choice != "4" and choice != "5":
-        print("Please try again, enter a number between 1 and 5..\n")
+        print("Please try again, enter a number between 1 and 5. \n")
 
     # Ask user for juggler info to add
     elif choice == "1":
@@ -21,7 +21,7 @@ while True:
 
     # Show all jugglers in db
     elif choice == "3":
-        db.view_all()
+        db.show_all()
 
     # Ask user to update high score for juggler named
     elif choice == "4":

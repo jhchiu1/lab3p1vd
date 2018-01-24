@@ -2,7 +2,7 @@ import sqlite3
 
 # Create db, cursor, and table
 try:
-    db = sqlite3.connect('db.add_juggler')
+    db = sqlite3.connect('jugglers.db')
     cursor = db.cursor()
     cursor.execute('create table if not exists jugglers (name text, country text, catches int)')
 except sqlite3.Error:
